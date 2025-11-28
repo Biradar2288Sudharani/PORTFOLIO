@@ -570,3 +570,18 @@ nav {
     padding-top: 70px; /* adjust height of your navbar */
   }
 }
+/* Mobile view fix */
+@media (max-width: 768px) {
+  .about-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-img img {
+    max-width: 80%;   /* adjusts size on mobile */
+    height: auto;
+    margin: 0 auto;   /* ensures perfect center */
+    display: block;
+  }
+}
