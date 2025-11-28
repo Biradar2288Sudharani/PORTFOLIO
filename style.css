@@ -349,95 +349,12 @@ span{
    font-size: 2rem;
    margin: 1rem 0 3rem; 
 }
-/* Project Section CSS  */
-/* slider wrapper */
-.project-slider-section {
-  padding: 60px 0;
-  background-color: #1f242d;
-  color: #fff;
-  text-align: center;
-}
-.project-title { font-size: 2.4rem; margin-bottom: 26px; }
-
-/* viewport holds the visible 3 cards */
-.slider-container { position: relative; width: 92%; margin: 0 auto; }
-.slider-viewport { overflow: hidden; }
-
-/* track is the flex row */
-.slider-track {
-  display: flex;
-  gap: 20px;               /* gap used by JS */
-  transition: transform 0.6s cubic-bezier(.2,.8,.2,1);
-  will-change: transform;
-  padding-bottom: 6px;
-}
-
-/* card sizing - exactly 3 visible cards */
-.project-card {
-  min-width: calc((98% - 20px) / 3); /* 3 cards per view, -gap total (2 gaps of 20) */
-  background: #111;
-  width: 30%;
-  border-radius: 10px;
-  padding: 10px;
-  /* box-shadow: 0 6px 18px rgba(0,255,255,0.06); */
-  text-align: left;
-  /* color: #fff; */
-  flex-shrink: 0;
-  box-shadow: 0 0 15px cyan;
-  flex-wrap: wrap;
-}
-
-/* card contents */
-.project-card img { width: 100%; height: 170px; object-fit: cover; border-radius: 8px; }
-.project-card h1 { color: #00ffee; margin: 12px 0 6px; font-size: 2rem; }
-.project-card p {  width: 100%;color: #cfcfcf; font-size: 1.5rem; margin-bottom: 12px; }
-.see-btn {
-  display:inline-block; padding:8px 14px; border-radius:8px; background:#00ffee; color:#000; font-weight:700; text-decoration:none;
-}
-
-/* arrows: vertically centered at exact middle */
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width:48px; height:48px;
-  border-radius:50%;
-  border:none;
-  background: rgba(0,0,0,0.55);
-  color:#fff;
-  font-size:22px;
-  cursor:pointer;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  transition: all .22s ease;
-  box-shadow: 0 4px 18px rgba(0,0,0,0.4);
-  z-index: 10;
-  opacity: 0.9;
-}
-
-/* hover shows "hours" like tooltip look — simple scale & glow */
-.arrow:hover {
-  transform: translateY(-50%) scale(1.06);
-  background: #ff9800;
-  color: #000;
-  box-shadow: 0 6px 22px rgba(255,152,0,0.35);
-}
-
-/* place arrows exactly at left & right middle (inside viewport bounds) */
-.left-arrow { left: 6px; }
-.right-arrow { right: 6px; }
-
-/* small screens: make 1 card visible, arrows stay */
-@media (max-width: 900px) {
-  .project-card { min-width: calc(100% - 0px); } /* single card view */
-}
 
 /* Contact Section CSS */
 /* Contact Section CSS */
 .contact {
     text-align: center;
-    background-color: #323946;
+    background-color: #1f242d;
 }
 
 .contact .table {
