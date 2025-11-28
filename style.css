@@ -10,11 +10,12 @@
     font-family: 'poppins', sans-serif;
 }
 :root{
-    --bg-color:#1f242d;
+    --bg-color: black;
     --second-bg-color:#323946;
     --text-color:#fff;
     --main-color:#0ef;
 }
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -49,14 +50,26 @@ section{
 .header.sticky{
     border-bottom: .1rem solid rgba(0,0,0, .2);
 }
-.logo{
-    font-size: 2.5rem;
-    color: var(--text-color);
-    font-weight: 600;
-    cursor: default;
+.logo a {
+    display: flex;           /* flex makes alignment easy */
+    align-items: center;     /* vertical center */
+    text-decoration: none;   /* remove underline */
 }
+
+.logo img {
+    height: 60px;            /* logo size */
+    width: auto;
+    }
+
+.logo-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white; 
+    margin-left: 1rem;       /* space between logo and text */
+}
+
 .navbar a{
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
@@ -74,8 +87,10 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1f242d;
 }
 .home-img img{
+    /* padding-left: 5%; */
    width: 25vw;
    border-radius: 25%;
    animation: floatImage 4s ease-in-out infinite; 
@@ -210,9 +225,12 @@ span{
 }
 /* Education section css */
 /* Education Heading */
+.education-section{
+    background-color: #1f242d;
+}
 .education-section .heading {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   color: #fff;
   margin-bottom: 2rem;
 }
@@ -221,14 +239,14 @@ span{
 .edu-card-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 100px;
     flex-wrap: wrap;
     padding: 20px;
 }
 
 /* Single card */
 .edu-card {
-    width: 320px;
+    width: 400px;
     background: #0d1b2a;
     border: 2px solid cyan;
     border-radius: 12px;
@@ -252,12 +270,12 @@ span{
 /* Content */
 .edu-content {
     padding: 15px;
-    color: white;
+    color: cyan;
 }
 
-.edu-content h3 {
+.edu-content h2 {
     margin-bottom: 10px;
-    color: cyan;
+    color: white;
 }
 
 /* Marksheet button */
@@ -281,9 +299,9 @@ span{
 
 .heading{
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 5rem;
 }
-.about-content h2{
+.about-content h1{
     text-align: left;
     line-height: 1.2;
 }
@@ -295,6 +313,10 @@ span{
     margin: 2rem 0 3rem;
 }
 /* My Skill Section CSS */
+.skills {
+    background-color: #323946;
+}
+
 .skills h2{
     margin-bottom: 5rem;
 }
@@ -307,7 +329,7 @@ span{
 }
 .skills-container .skills-box{
     flex: 1 1 30rem;
-    background: var(--second-bg-color);
+    background: black;
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -320,22 +342,18 @@ span{
     border-color: var(--main-color);
     transform: scale(1.02);
 }
-.skills-box i{
-    font-size: 7rem;
-    color: var(--main-color);
-}
-.skills-box h3{
-    font-size: 2rem;
+.skills-box h1{
+    font-size: 4rem;
 }
 .skills-box p{
-   font-size: 1.6rem;
+   font-size: 2rem;
    margin: 1rem 0 3rem; 
 }
-/* Project Section CSS */
+/* Project Section CSS  */
 /* slider wrapper */
 .project-slider-section {
   padding: 60px 0;
-  background: #0a0a0a;
+  background-color: #1f242d;
   color: #fff;
   text-align: center;
 }
@@ -419,13 +437,14 @@ span{
 /* Contact Section CSS */
 .contact {
     text-align: center;
+    background-color: #323946;
 }
 
 .contact .table {
     border-collapse: collapse;   /* clean lines */
-    width: 70%;                  /* keep table center */
+    width: 70%;                /* keep table center */
     margin: 20px auto;           /* center table */
-    background: #00eaff;         /* your required color */
+    background: cyan;         /* your required color */
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 15px #00eaff;
