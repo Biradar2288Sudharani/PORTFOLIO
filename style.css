@@ -548,3 +548,25 @@ span{
         margin-top: 2rem;
     }
 }
+
+/* Nav constant in mobile css */
+/* Default: desktop/laptop — navbar normal */
+nav {
+  position: static;
+}
+
+/* Mobile: make navbar fixed */
+@media (max-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  /* Prevent content from going under navbar */
+  body {
+    padding-top: 70px; /* adjust height of your navbar */
+  }
+}
