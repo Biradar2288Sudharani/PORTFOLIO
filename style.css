@@ -134,16 +134,16 @@ span{
     align-items: center;
     width: 4rem;
     height: 4rem;
-    background: transparent;
+    background: var(--main-color);
     border: .2rem solid var(--main-color);
     border-radius: 50%;
     font-size: 2rem;
-    color: var(--main-color);
+    color: var(--second-bg-color);;
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
 }
 .social-media a:hover{
-    background-color: var(--main-color);
+    background-color: cyan;
     color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 
@@ -202,17 +202,20 @@ span{
 }
 
 .about-text {
-  max-width: 650px;
+  max-width: 700px;
   color: #ddd;
-  font-size: 1.1rem;
+  font-size: 2rem;
   line-height: 1.7;
+  text-align: justify;          /* makes both sides equal */
+  text-align-last: left;        /* keeps last line aligned properly */
 }
 
 .about-text h3 {
   font-size: 1.8rem;
   color: #fff;
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
 }
+
 
 @keyframes border-animation {
   from {
