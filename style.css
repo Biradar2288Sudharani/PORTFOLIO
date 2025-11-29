@@ -88,6 +88,7 @@ section{
     justify-content: center;
     align-items: center;
     background-color: #1f242d;
+    margin-top: 5px;
 }
 .home-img img{
     /* padding-left: 5%; */
@@ -585,35 +586,6 @@ nav {
     display: block;
   }
 }
-/* FIX: Perfect mobile navbar + hero spacing */
-@media (max-width: 768px) {
-
-  header, nav {
-    margin: 0 !important;
-    padding: 6px 12px !important;
-    height: auto !important;
-  }
-
-  /* Logo perfect size */
-  nav img, .logo img {
-    height: 42px !important;
-    width: auto !important;
-    object-fit: contain !important;
-  }
-
-  /* Hero section spacing so text doesn't hide */
-  .hero, .hero-text, #home {
-    margin-top: 65px !important;   /* gap below navbar */
-    padding-top: 0 !important;
-  }
-
-  /* Remove unwanted page gaps */
-  body {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-}
-
 /* About text mobile view css */
 @media (max-width: 768px) {
   .about-text {
@@ -622,3 +594,44 @@ nav {
   }
 }
 
+/* Remove extra black space on mobile */
+@media (max-width: 768px) {
+
+  /* MAIN SECTION FULL WIDTH */
+  /* #home,
+  section,
+  .home,
+  .container,
+  body,
+  html {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+  } */
+
+  /* This fixes side white/black gap */
+  * {
+    box-sizing: border-box !important;
+  }
+
+  /* IMAGE FULL FIT */
+  .home-img img {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+
+  /* Wrap full home content */
+  .home {
+    padding: 20px 15px !important;
+  }
+
+  /* Heading text also responsive */
+  .home h1,
+  .home h2,
+  .home p {
+    width: 100% !important;
+  }
+}

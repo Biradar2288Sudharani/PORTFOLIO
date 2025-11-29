@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatiblee" content="IE-edhe">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="icon" type="image/png" href="images/favicon.png">
         <title>Sachin Biradar</title>
         <!--box icons-->
@@ -32,7 +32,7 @@
                <h3>Hello, It's me</h3>
                <h1>Biradar Sachin</h1>
                <h2>And I'm</h2>
-               <h3>Artillery Soldier in the Indian Army Empowering the Nation with Courage</h3>
+               <h3>Artillery Soldier in the Indian Army Empowering Nation with Courage </h3>
                
                  <div class="social-media">
                  <a href="https://wa.me/7620750308" target="_blank"><i class='bx bxl-whatsapp'></i></a>
@@ -321,5 +321,14 @@
         updateSlider();
         })();
         </script>
+        <script>
+            let menu = document.querySelector('.navbar');
+            let menuIcon = document.querySelector('#menu-icon');
+
+            menuIcon.onclick = () => {
+                menu.classList.toggle('active');
+            }
+        </script>
+
     </body>
 </html>
