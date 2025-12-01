@@ -448,13 +448,13 @@ span{
 @media (max-width: 768px) {
     #menu-icon{
         display: block;
-        padding-left: 40%;
+        padding-left: 38%;
     }
     .navbar{
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
+        width: 82%;
         padding: 1rem 3%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
