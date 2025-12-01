@@ -1,4 +1,4 @@
-@import url("https://fonts.googlepis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 *{
     margin: 0;
     padding: 0;
@@ -418,27 +418,6 @@ span{
     box-shadow: 0 0 15px #00eaff;
 }
 
-
-.footer-text p{
-    font-size: 1.6rem;
-}
-.footer-iconTop a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: .8rem;
-    background: var(--main-color);
-    border-radius: .8rem;
-    transition: .5s ease;
-}
-.footer-iconTop a:hover{
-    box-shadow: 0 0 1rem var(--main-color);
-}
-.footer-iconTop a i{
-    font-size: 2.4rem;
-    color: var(--second-bg-color);
-}
-
 /* BREAKPOINTS*/
 @media(max-width: 768px){
     html{
@@ -469,12 +448,13 @@ span{
 @media (max-width: 768px) {
     #menu-icon{
         display: block;
+        padding-left: 40%;
     }
     .navbar{
         position: absolute;
         top: 100%;
         left: 0;
-        width: 80%;
+        width: 100%;
         padding: 1rem 3%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
